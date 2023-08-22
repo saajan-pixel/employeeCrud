@@ -1,4 +1,6 @@
+import { first } from 'rxjs';
 import { Component } from '@angular/core';
+import { EmployeeService } from 'src/services/employee.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'employeeCRUD';
+  isLoggedIn = false;
+
+  constructor(private _employeeService: EmployeeService) {
+    if(localStorage.getItem('user')){
+      this.isLoggedIn=true
+    }
+  }
+
 }

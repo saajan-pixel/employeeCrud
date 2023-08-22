@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Raj",
+      "lastName": "Thapa",
+      "email": "raj@gmail.com",
+      "designation": "Project Manager",
+      "address": "kathmandu",
+      "gender": "male"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "role": "admin",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin"
+    }
+  ]
+}
